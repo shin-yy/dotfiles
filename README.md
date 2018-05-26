@@ -1,2 +1,9 @@
 # dotfiles
-_ やん
+## Install
+
+```
+cd %HOMEPATH%
+git clone
+call dotfiles\mklink.bat
+```
+
