@@ -1,0 +1,37 @@
+# This is a configuration for NYAGOS
+# The syntax is like a batchfile of command.com.
+
+alias "ls=__ls__ -oFh $*"
+alias "ll=__ls__ -olFh $*"
+alias "wordpad=""%PROGRAMFILES%\Windows NT\Accessories\wordpad.exe"""
+
+suffix "awk=gawk -f"
+suffix "js=cscript //nologo"
+suffix "lua=nyagos.exe --norc --lua-file"
+suffix "pl=perl"
+suffix "ps1=powershell -ExecutionPolicy RemoteSigned -file"
+suffix "rb=ruby"
+suffix "vbs=cscript //nologo"
+suffix "wsf=cscript //nologo"
+suffix "py=python"
+
+set "PROMPT=$L%COMPUTERNAME%:$P$G$_$$$s"
+
+rem vim:set ft=dosbatch:
+
+# vim
+set VIM=%PROGRAMFILES%\vim81-kaoriya-win64\
+set PATH+=%VIM%
+alias "vim=""%PROGRAMFILES%\vim81-kaoriya-win64\vim.exe"" $*"
+alias "vi="vim $*"
+
+# msys
+set MSYSBIN=C:\msys64\usr\bin
+set PATH+=%MSYSBIN%
+
+# git
+alias "tig=""C:\Program Files\Git\usr\bin\tig.exe"" $*"
+
+# alias
+alias "lll=__ls__ -olFha $*#"
+
