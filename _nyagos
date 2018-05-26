@@ -31,6 +31,7 @@ set PATH+=%MSYSBIN%
 
 # git
 alias "tig=""C:\Program Files\Git\usr\bin\tig.exe"" $*"
+alias "tig=""%PROGRAMFILES%\Git\usr\bin\tig.exe"" $*"
 
 # alias
 alias "lll=__ls__ -olFha $*#"
