@@ -20,19 +20,25 @@ set "PROMPT=$L%COMPUTERNAME%:$P$G$_$$$s"
 rem vim:set ft=dosbatch:
 
 # vim
-set VIM=%PROGRAMFILES%\vim81-kaoriya-win64\
+set VIM=%PROGRAMFILES%\vim81-kaoriya-win64
 set PATH+=%VIM%
-alias "vim=""%PROGRAMFILES%\vim81-kaoriya-win64\vim.exe"" $*"
+alias "vim=""%VIM%\vim.exe"" $*"
 alias "vi="vim $*"
 
 # msys
 set MSYSBIN=C:\msys64\usr\bin
 set PATH+=%MSYSBIN%
 
+# calibre
+set CALIBREBIN=%ProgramFiles(x86)%\Calibre2
+set PATH+=%CALIBREBIN%
+
 # git
 alias "tig=""C:\Program Files\Git\usr\bin\tig.exe"" $*"
 alias "tig=""%PROGRAMFILES%\Git\usr\bin\tig.exe"" $*"
 
 # alias
-alias "lll=__ls__ -olFha $*#"
+alias "la=__ls__ -olFha $*#"
 
+# var
+set LANG=ja_JP.UTF-8
